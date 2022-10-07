@@ -12,6 +12,11 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
 /***** HOME *****/
 
 .home {
@@ -91,4 +96,72 @@ a:hover {
 
 .title {
   font-size: 100px;
+}
+
+/***** ABOUT *****/
+
+.about {
+  height: 100vh;
+  background: var(--primary-color);
+}
+
+.about .container {
+  display: flex;
+}
+
+.about .timing .text {
+  margin: 10px 0;
+}
+
+.about .timing .text:after {
+  content: "•";
+  color: white;
+  display: block;
+  font-size: 25px;
+  margin: 10px;
+}
+
+.about .timing .text:last-of-type:after {
+  content: "|";
+}
+
+.about .timing .text h4 {
+  color: gray;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.about .timing span {
+  color: white;
+  font-size: 15px;
+  display: block;
+}
+
+.timing {
+  width: 33%;
+  background-image: url(../images/brush-big.jpg);
+  padding: 22px;
+}
+
+.icon-cut {
+  width: 50px;
+}
+
+.experience {
+  width: 66%;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.timing h3 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--primary-color);
+  width: fit-content;
+  margin: 0 auto 30px auto;
+  font-size: 30px;
 }
