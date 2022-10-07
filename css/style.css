@@ -307,3 +307,41 @@ a:hover {
   text-transform: uppercase;
   font-weight: bold;
 }
+
+/***** GALERY *****/
+
+.gallery {
+  padding: 100px 0;
+  background-color: var(--primary-color-light);
+}
+
+.gallery h2 {
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 50px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.gallery img {
+  margin: 0 auto;
+  display: block;
+}
+
+.gallery .gallery-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100vh;
+  margin: 50px auto;
+}
+
+.gallery-wrapper div {
+  border: 10px solid var(--primary-color);
+  margin: 6px;
+  width: 33%;
+}
+
+.gallery-wrapper div img {
+  width: 100%;
+}
