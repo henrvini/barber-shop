@@ -101,12 +101,20 @@ a:hover {
 /***** ABOUT *****/
 
 .about {
-  height: 100vh;
   background: var(--primary-color);
 }
 
 .about .container {
   display: flex;
+}
+
+.timing {
+  position: relative;
+  top: -50px;
+  width: 33%;
+  background-image: url(../images/brush-big.jpg);
+  background-size: cover;
+  padding: 22px;
 }
 
 .about .timing .text {
@@ -125,6 +133,15 @@ a:hover {
   content: "|";
 }
 
+.timing h3 {
+  color: var(--primary-color);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--primary-color);
+  width: fit-content;
+  margin: 0 auto 30px auto;
+  font-size: 30px;
+}
+
 .about .timing .text h4 {
   color: gray;
   font-weight: 400;
@@ -137,18 +154,15 @@ a:hover {
   display: block;
 }
 
-.timing {
-  width: 33%;
-  background-image: url(../images/brush-big.jpg);
-  padding: 22px;
-}
-
 .icon-cut {
   width: 50px;
 }
 
 .experience {
   width: 66%;
+  color: white;
+  margin-left: 7%;
+  margin-top: 100px;
 }
 
 .overlay {
@@ -157,11 +171,27 @@ a:hover {
   padding: 40px 20px;
 }
 
-.timing h3 {
-  color: var(--primary-color);
-  text-transform: uppercase;
-  border-bottom: 1px solid var(--primary-color);
-  width: fit-content;
-  margin: 0 auto 30px auto;
-  font-size: 30px;
+.experience h2 {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.experience h2:after {
+  display: block;
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: #a38f78;
+  margin: 22px 0;
+}
+
+.experience .text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.experience p {
+  margin-bottom: 22px;
+  font-weight: 100;
+  font-size: 17px;
 }
