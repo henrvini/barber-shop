@@ -332,6 +332,7 @@ a:hover {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 1100px;
   height: 100vh;
   margin: 50px auto;
 }
